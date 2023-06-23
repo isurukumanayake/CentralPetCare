@@ -3,7 +3,7 @@ import Cookies from "js-cookie";
 
 // const BASE_URL = "http://localhost:4000/api/";
 
-const BASE_URL = "https://centralpetcare-api.onrender.com";
+const BASE_URL = "https://centralpetcare-api.onrender.com/api";
 
 // const user = JSON.parse(localStorage.getItem("user"));
 // const token = user && user.token;

@@ -1,5 +1,5 @@
 
-const allowedOrigins = [process.env.CLIENT_URL, process.env.CLIENT_URL2];
+const allowedOrigins = [process.env.CLIENT_URL, process.env.CLIENT_URL2, process.env.SERVER_URL];
 
 const corsOptions = {
 

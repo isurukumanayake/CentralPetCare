@@ -46,7 +46,7 @@ const port = process.env.PORT || 4000;
 
 const app = express();
 
-app.use(cors());
+app.use(cors({origin: [process.env.CLIENT_URL, process.env.CLIENT_URL2]}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 

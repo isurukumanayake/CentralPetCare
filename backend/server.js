@@ -4,6 +4,7 @@ const colors = require("colors");
 const dotenv = require("dotenv").config();
 const { errorHandler } = require("./middleware/errorMiddleware");
 const connectDB = require("./config/db");
+const corsOptions = require("./config/corsOptions")
 
 const userRoutes = require("./routes/userRoutes");
 const productRoutes = require("./routes/productRoutes");
@@ -46,7 +47,7 @@ const port = process.env.PORT || 4000;
 
 const app = express();
 
-app.use(cors({origin: [process.env.CLIENT_URL, process.env.CLIENT_URL2]}));
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
